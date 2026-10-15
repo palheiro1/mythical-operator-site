@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tester guide · Mythical Operator beta13</title>
+    <meta
+      name="description"
+      content="Join the first invited community testing round for Mythical Operator on Windows and Linux. Download beta13, read the tester guide and share your results."
+    />
+    <meta name="theme-color" content="#142423" />
+    <meta property="og:title" content="Help shape Mythical Operator" />
+    <meta
+      property="og:description"
+      content="Community beta13 · Windows & Linux · First invited round"
+    />
+    <link rel="canonical" href="https://operator.mythicalbeings.io/guide" />
+    <link rel="icon" href="/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="/" aria-label="Mythical Operator home"
+        ><img src="/mark.svg" width="37" height="37" alt="" /><span
+          >MYTHICAL <b>OPERATOR</b></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="/guide">Tester guide</a><a href="/#updates">Round updates</a
+        ><a class="nav-feedback" href="/feedback"
+          >Send feedback <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main" class="wrap guide">
+      <a class="back" href="/">Back to the round</a>
+      <div class="guide-nav">
+        <a href="/downloads">Private downloads</a
+        ><a href="/feedback">Feedback form</a
+        ><a href="/tester-guide.md" download>Save this guide</a>
+      </div>
+      <p class="eyebrow">COMMUNITY BETA13 · FIRST INVITED ROUND</p>
+      <h1>Your first session.</h1>
+      <p>
+        Install <strong>0.2.0-beta.13</strong>, complete the checks below and
+        try one feature available to you, or the feature in your invitation.
+        Send every result, question or concern through the
+        <a href="/feedback">feedback form</a>. Keep your tester reference for
+        follow-ups.
+      </p>
+      <h2>Install or update</h2>
+      <p>
+        Download the installer for your system and <code>SHA256SUMS</code> from
+        the <a href="/downloads">beta13 download folder</a>. Use files from that
+        one delivery.
+      </p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>System</th>
+              <th>Installer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Windows 11 x64</td>
+              <td><code>Mythical.Operator-0.2.0-beta.13-win-x64.exe</code></td>
+            </tr>
+            <tr>
+              <td>Ubuntu 24.04 x64</td>
+              <td>
+                <code>Mythical.Operator-0.2.0-beta.13-linux-amd64.deb</code>
+              </td>
+            </tr>
+            <tr>
+              <td>Linux Mint or another compatible x64 Linux</td>
+              <td>
+                <code
+                  >Mythical.Operator-0.2.0-beta.13-linux-x86_64.AppImage</code
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>On Windows, check the downloaded file in PowerShell:</p>
+      <pre><code class="language-powershell">Get-FileHash -Algorithm SHA256 '.\Mythical.Operator-0.2.0-beta.13-win-x64.exe'
+</code></pre>
+      <p>
+        Compare its hash with the matching entry in <code>SHA256SUMS</code>.
+        This beta has no commercial publisher signature, so Windows may identify
+        an unknown publisher. If you are unsure about the file or installation,
+        ask through the form.
+      </p>
+      <p>On Linux, check the downloaded files from their folder:</p>
+      <pre><code class="language-sh">sha256sum --ignore-missing -c SHA256SUMS
+</code></pre>
+      <p>
+        The installer you will use must report <code>OK</code>. For Ubuntu,
+        install the DEB:
+      </p>
+      <pre><code class="language-sh">sudo apt install './Mythical.Operator-0.2.0-beta.13-linux-amd64.deb'
+</code></pre>
+      <p>
+        For AppImage, grant execution permission and open it as your ordinary
+        user:
+      </p>
+      <pre><code class="language-sh">chmod +x './Mythical.Operator-0.2.0-beta.13-linux-x86_64.AppImage'
+'./Mythical.Operator-0.2.0-beta.13-linux-x86_64.AppImage'
+</code></pre>
+      <p>
+        If FUSE is missing, try the AppImage with
+        <code>--appimage-extract-and-run</code>. If Ubuntu blocks its sandbox,
+        use the DEB or request installation help through the form. Keep the
+        Electron sandbox enabled.
+      </p>
+      <p>
+        For an update, stop the active session, create and verify an encrypted
+        backup, exit the app and install over the previous version. Keep the
+        existing profile. Run one version at a time. A profile renewed with
+        beta12 localfix.3 or beta13 must not be downgraded to the original
+        beta12.
+      </p>
+      <h2>First session</h2>
+      <ol>
+        <li>
+          Choose your language, configure the vault and optional PIN, and add a
+          public account for observation. Enter wallet secrets only in the app's
+          local vault window. Use a dedicated test wallet for live operations.
+        </li>
+        <li>
+          Check the account, network and inventory. Open a review for your
+          assigned feature, verify the assets, destination and fees, then
+          cancel. No operation should be submitted by that cancellation.
+        </li>
+        <li>
+          If you choose a live test, review and confirm your limits and validity
+          in Settings. Activate the session explicitly. Review the operation
+          again and approve it only when its details are correct.
+        </li>
+        <li>
+          Follow Activity through the result. Compare the assets, fees and
+          remaining limits with what you approved. Submission alone is not a
+          completed result.
+        </li>
+        <li>
+          Exit normally and reopen once the submission state is known. Check
+          that history persists and the app requires unlocking and manual
+          session activation.
+        </li>
+      </ol>
+      <p>
+        Changing limits or renewing an authorization requires manual session
+        activation. Closing the window to the tray can leave an authorized
+        session running; use <strong>Exit</strong> to stop the app. Pause stops
+        new work; it does not reverse work already submitted.
+      </p>
+      <h2>Send the result</h2>
+      <p>
+        Use the form even when everything worked. Record review and final
+        execution separately: <strong>Pass</strong>, <strong>Fail</strong>,
+        <strong>Pending</strong>, <strong>Blocked</strong> or
+        <strong>Not run</strong>. A missing ingredient, offer or service is a
+        reason to explain a blocked test. Bounty is observation-only. A delayed
+        game result stays pending until it arrives.
+      </p>
+      <p>
+        For problems, describe your steps, what you expected and what happened.
+        Never paste seeds, keys, PINs, passwords, raw signed transactions,
+        vaults, databases or complete logs. File uploads are disabled for this
+        round; brief redacted text and optional public transaction references
+        are enough.
+      </p>
+      <p>
+        If spending, recipients, repeated sends or the ability to stop new work
+        look wrong, pause or exit if available and choose
+        <strong>Important spending or security concern</strong> in the form.
+        Preserve the profile and inspect Activity before retrying an uncertain
+        send. Check the entry page for round updates and retest requests; all
+        replies go through the same form.
+      </p>
+      <h2 id="limitations">Current limitations</h2>
+      <p>
+        Updates are manual. Windows 11 x64 and Ubuntu 24.04 x64 are the primary
+        targets; other compatible x64 Linux systems are welcome but coverage
+        varies. Some translations and layouts are still being refined.
+      </p>
+      <p>
+        Craft and GIFTZ have completed-operation evidence. The reviewed
+        Incubation report included submission, retained-card and renewal
+        evidence; its final return was pending. Morph has earlier
+        completed-operation evidence. Market, Battlegrounds, Polygon/bridge,
+        potions and collection rewards need more complete testing. Bounty is
+        observation-only.
+      </p>
+      <h2 id="privacy">Feedback privacy</h2>
+      <p>
+        Send all questions and feedback through the
+        <a href="/feedback">same form</a>. Use a non-identifying tester
+        reference. Your real name is not required; an optional Google account
+        address is used only when you request private download access. Responses
+        are stored in Google Forms and a private Google Sheet for the project
+        maintainers.
+        <a href="https://policies.google.com/privacy"
+          >Google's privacy policy</a
+        >
+        applies to those services.
+      </p>
+      <p>
+        File uploads and public response summaries are disabled. Never send
+        wallet credentials or complete personal exports. Share only brief
+        redacted text; public addresses and transaction references can link
+        activity to you, so omit them unless essential.
+      </p>
+      <p>
+        Reports and access requests are reviewed manually during the invited
+        round, 15–29 October 2026. This form is not monitored continuously and
+        no fixed response time is promised. Check
+        <a href="/#updates">round updates</a> before another test. This website
+        uses no analytics scripts or tracking cookies.
+      </p>
+    </main>
+    <footer class="wrap site-footer">
+      <p>MYTHICAL BEINGS <span> / </span> OPERATOR</p>
+      <p>
+        <a href="/guide#privacy">Feedback privacy</a
+        ><a href="https://github.com/palheiro1/mythical-operator-site"
+          >Page source</a
+        >
+      </p>
+      <p>
+        Matching app source & licence notices accompany the private delivery.
+      </p>
+    </footer>
+  </body>
+</html>
