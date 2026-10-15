@@ -2,7 +2,7 @@
 
 This official Mythical Operator community testing page uses the project's existing visual assets at the project owner's request. The artwork is not covered by this repository's software licence. No additional right to reuse the artwork or trademarks is granted by this repository.
 
-- **Tulpar** and **Kel Essuf**: original illustrations by **Ana Santiso**, from the project's MEGA illustration archive. The complete supplied images are displayed without alteration, including their painted signatures. Their cultural labels follow the project's creature documentation: Tulpar — Turkic traditions, Asia; Kel Essuf — Amazigh traditions, Africa.
+- **Ifrit** and **Kel Essuf**: original illustrations by **Ana Santiso**, from the project's MEGA illustration archive. The complete supplied images are displayed without alteration, retaining any painted signatures. Their cultural labels follow the project's creature documentation: Ifrit — Arabic traditions, Africa; Kel Essuf — Amazigh traditions, Africa.
 - **Mythical Beings emblem**: the existing gold emblem from the wallet repository, also used in the Mythical Beings brand identity.
 - **Five continent symbols** and **paper texture**: existing Mythical Beings design assets from the project's MEGA archive.
 - **Chelsea Market** and **ABeeZee**: existing font dependencies from the wallet repository, self-hosted here under their respective SIL Open Font Licences in `assets/fonts/`.
