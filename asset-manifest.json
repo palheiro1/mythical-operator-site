@@ -1,0 +1,95 @@
+[
+  {
+    "file": "mark.svg",
+    "source": "wallet/public/images/logos/new/goldLogo.svg",
+    "bytes": 187303,
+    "sha256": "b082e65c07e8f5c87563f122b4de9ddfe1f385968d716a2b2fc9ffb13b2a796d"
+  },
+  {
+    "file": "assets/tulpar.jpg",
+    "source": "MEGA/Illustrations/LowResolution/TulparRGB.jpg",
+    "bytes": 437900,
+    "sha256": "a815a4ed58575e0d4577306137ec4347bc7c8911bcf7f9b2b7445c2084953398"
+  },
+  {
+    "file": "assets/kel-essuf.jpg",
+    "source": "MEGA/Illustrations/LowResolution/KelEssufRGB.jpg",
+    "bytes": 437762,
+    "sha256": "0557925e48cba84414a3cc6163fa2597fadc212f50fe08f91335ab1d8a83cb41"
+  },
+  {
+    "file": "assets/paper.jpg",
+    "source": "MEGA/Site Design/Images/site_bg_white_72dpi.jpg",
+    "bytes": 46530,
+    "sha256": "aaf66d72c9fbe3307639f1c9e089956152572cc99d4e28f3758f42bf6fd678b4"
+  },
+  {
+    "file": "assets/fonts/chelsea-market-latin.woff2",
+    "source": "wallet/node_modules/@fontsource/chelsea-market/files/chelsea-market-latin-400-normal.woff2",
+    "bytes": 61504,
+    "sha256": "c74227d556a0967c1be9c42926de92bbd82b09f650d583c520c2d9a4b98cf307"
+  },
+  {
+    "file": "assets/fonts/abeezee-latin.woff2",
+    "source": "wallet/node_modules/@fontsource/abeezee/files/abeezee-latin-400-normal.woff2",
+    "bytes": 17612,
+    "sha256": "01e288101d78737f389bd9367dbff5ff73235ef2afc3eca13607b53d45f9deca"
+  },
+  {
+    "file": "assets/fonts/Chelsea-Market-OFL.txt",
+    "source": "wallet/node_modules/@fontsource/chelsea-market/LICENSE",
+    "bytes": 4420,
+    "sha256": "e85b920921d345a4bae2f4f8c84f7ac19d260705e096c993b5e89b3eb8481f6d"
+  },
+  {
+    "file": "assets/fonts/ABeeZee-OFL.txt",
+    "source": "wallet/node_modules/@fontsource/abeezee/LICENSE",
+    "bytes": 4554,
+    "sha256": "a9544cf4acae1f8598d103c7f9862e67927070644965f110548f09e776da30c6"
+  },
+  {
+    "file": "assets/continents/america.svg",
+    "source": "MEGA/logos&icons/Other icons/america.svg",
+    "bytes": 5493,
+    "sha256": "c528a7e7749d82309b11a11d486d4f3cc12414784b90bf87fd56544538e33b69",
+    "sourceSha256": "f064698a2432d59da3ae03b4e44396f84780fc3cdb8bdd55dafe4e2dd3959809",
+    "sourceBytes": 5675,
+    "normalization": "SVG CSS moved to equivalent presentation attributes; geometry and colours unchanged."
+  },
+  {
+    "file": "assets/continents/europe.svg",
+    "source": "MEGA/logos&icons/Other icons/europe.svg",
+    "bytes": 5790,
+    "sha256": "1cca9b9777f014c27cab558559c5046f0e1730b0188bdd17fda1c03c9e5b4e5a",
+    "sourceSha256": "09039533efc8f7208bbed3512e58e878db2cbca90c63c0e2e8174866069b59d8",
+    "sourceBytes": 5972,
+    "normalization": "SVG CSS moved to equivalent presentation attributes; geometry and colours unchanged."
+  },
+  {
+    "file": "assets/continents/asia.svg",
+    "source": "MEGA/logos&icons/Other icons/asia.svg",
+    "bytes": 5159,
+    "sha256": "1d3249c39e5f5f7d0b9431ca1ec7d0eb6233afa0c6a10df1582d36725c48afa5",
+    "sourceSha256": "820be298e6460a704717239fc6061579158de9e0490cd3e4de2f249781ef40a3",
+    "sourceBytes": 5337,
+    "normalization": "SVG CSS moved to equivalent presentation attributes; geometry and colours unchanged."
+  },
+  {
+    "file": "assets/continents/africa.svg",
+    "source": "MEGA/logos&icons/Other icons/africa.svg",
+    "bytes": 1755,
+    "sha256": "afc5700e43369f8393559c162efb1843ecfdfa123b4c18c92232c5888e8b3cb7",
+    "sourceSha256": "0450f0fb9eefdd7ac6b8a5e146f44c97b594fcb7d02bdfa338b24e70feb8b431",
+    "sourceBytes": 1953,
+    "normalization": "SVG CSS moved to equivalent presentation attributes; geometry and colours unchanged."
+  },
+  {
+    "file": "assets/continents/oceania.svg",
+    "source": "MEGA/logos&icons/Other icons/oceania.svg",
+    "bytes": 7748,
+    "sha256": "7289d25cd5185708fcaa576807feba3ce0e6b1fb44c35b96820a5396c78afa16",
+    "sourceSha256": "ae6a61d709e013c1f6dbc6bc948c63eca091d0c9fee067cd7b4983a1f161804d",
+    "sourceBytes": 7927,
+    "normalization": "SVG CSS moved to equivalent presentation attributes; geometry and colours unchanged."
+  }
+]

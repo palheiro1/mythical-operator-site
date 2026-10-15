@@ -8,7 +8,7 @@
       name="description"
       content="Join the first invited community testing round for Mythical Operator on Windows and Linux. Download beta13, read the tester guide and share your results."
     />
-    <meta name="theme-color" content="#142423" />
+    <meta name="theme-color" content="#f4f0e4" />
     <meta property="og:title" content="Help shape Mythical Operator" />
     <meta
       property="og:description"
@@ -21,14 +21,16 @@
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header wrap">
-      <a class="brand" href="/" aria-label="Mythical Operator home"
-        ><img src="/mark.svg" width="37" height="37" alt="" /><span
-          >MYTHICAL <b>OPERATOR</b></span
-        ></a
-      >
+      <a class="brand" href="/" aria-label="Mythical Operator home">
+        <img src="/mark.svg" width="58" height="57" alt="" />
+        <span
+          ><span class="brand-world">MYTHICAL BEINGS</span><b>Operator</b></span
+        >
+      </a>
       <nav aria-label="Main navigation">
-        <a href="/guide">Tester guide</a><a href="/#updates">Round updates</a
-        ><a class="nav-feedback" href="/feedback"
+        <a href="/guide" aria-current="page">Tester guide</a>
+        <a href="/#updates">Round log</a>
+        <a class="nav-feedback" href="/feedback"
           >Send feedback <span aria-hidden="true">↗</span></a
         >
       </nav>
@@ -49,7 +51,13 @@
         <a href="/feedback">feedback form</a>. Keep your tester reference for
         follow-ups.
       </p>
-      <h2>Install or update</h2>
+      <div class="guide-toc" role="navigation" aria-label="On this page">
+        <a href="#install">Install or update</a
+        ><a href="#session">First session</a
+        ><a href="#result">Send the result</a
+        ><a href="#limitations">Limitations</a><a href="#privacy">Privacy</a>
+      </div>
+      <h2 id="install">Install or update</h2>
       <p>
         Download the installer for your system and <code>SHA256SUMS</code> from
         the <a href="/downloads">beta13 download folder</a>. Use files from that
@@ -123,7 +131,7 @@
         beta12 localfix.3 or beta13 must not be downgraded to the original
         beta12.
       </p>
-      <h2>First session</h2>
+      <h2 id="session">First session</h2>
       <ol>
         <li>
           Choose your language, configure the vault and optional PIN, and add a
@@ -157,7 +165,7 @@
         session running; use <strong>Exit</strong> to stop the app. Pause stops
         new work; it does not reverse work already submitted.
       </p>
-      <h2>Send the result</h2>
+      <h2 id="result">Send the result</h2>
       <p>
         Use the form even when everything worked. Record review and final
         execution separately: <strong>Pass</strong>, <strong>Fail</strong>,
@@ -222,17 +230,31 @@
         uses no analytics scripts or tracking cookies.
       </p>
     </main>
-    <footer class="wrap site-footer">
-      <p>MYTHICAL BEINGS <span> / </span> OPERATOR</p>
-      <p>
-        <a href="/guide#privacy">Feedback privacy</a
-        ><a href="https://github.com/palheiro1/mythical-operator-site"
-          >Page source</a
+    <footer class="site-footer wrap">
+      <div class="footer-top">
+        <a class="footer-brand" href="https://mythicalbeings.io/"
+          ><img src="/mark.svg" width="39" height="39" alt="" /><span
+            >MYTHICAL BEINGS <b>/ OPERATOR</b></span
+          ></a
         >
-      </p>
-      <p>
-        Matching app source & licence notices accompany the private delivery.
-      </p>
+        <p>
+          <a href="/guide#privacy">Feedback privacy</a
+          ><a href="/ASSETS.md">Art & credits</a
+          ><a href="https://github.com/palheiro1/mythical-operator-site"
+            >Page source</a
+          >
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Creature illustrations by
+          <a href="https://mythicalbeings.io/about.html">Ana Santiso</a> ·
+          Mythical Beings
+        </p>
+        <p>
+          Matching app source & licence notices accompany the private delivery.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
