@@ -108,4 +108,4 @@ Send all questions and feedback through the [same form](/feedback). Use a non-id
 
 File uploads and public response summaries are disabled. Never send wallet credentials or complete personal exports. Share only brief redacted text; public addresses and transaction references can link activity to you, so omit them unless essential.
 
-Reports and access requests are reviewed manually during the invited round. This form is not monitored continuously and no fixed response time is promised. Check [round updates](/#updates) before another test. This website uses Vercel Web Analytics without tracking cookies.
+Reports and access requests are reviewed manually during the invited round, 15–29 October 2026. This form is not monitored continuously and no fixed response time is promised. Check [round updates](/#updates) before another test. This website uses Vercel Web Analytics without tracking cookies.
