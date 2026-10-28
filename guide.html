@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Tester guide · Mythical Operator beta13</title>
+    <title>Tester guide · IFRIT beta14</title>
     <meta
       name="description"
-      content="Join the first invited community testing round for Mythical Operator on Windows and Linux. Download beta13, read the tester guide and share your results."
+      content="Join the first invited community testing round for IFRIT on Windows and Linux. Download beta14, read the tester guide and share your results."
     />
     <meta name="theme-color" content="#f4f0e4" />
-    <meta property="og:title" content="Help shape Mythical Operator" />
+    <meta property="og:title" content="Help shape IFRIT" />
     <meta
       property="og:description"
-      content="Community beta13 · Windows & Linux · First invited round"
+      content="Community beta14 · Windows & Linux · First invited round"
     />
     <link rel="canonical" href="https://operator.mythicalbeings.io/guide" />
     <link rel="icon" href="/mark.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/style.css" />
-      <script defer src="/vercel-analytics-init.js"></script>
+    <script defer src="/vercel-analytics-init.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header wrap">
-      <a class="brand" href="/" aria-label="Mythical Operator home">
+      <a class="brand" href="/" aria-label="IFRIT home">
         <img src="/mark.svg" width="58" height="57" alt="" />
         <span
-          ><span class="brand-world">MYTHICAL BEINGS</span><b>Operator</b></span
+          ><span class="brand-world">MYTHICAL BEINGS</span><b>IFRIT</b></span
         >
       </a>
       <nav aria-label="Main navigation">
@@ -44,11 +44,11 @@
         ><a href="/feedback">Feedback form</a
         ><a href="/tester-guide.md" download>Save this guide</a>
       </div>
-      <p class="eyebrow">COMMUNITY BETA13 · FIRST INVITED ROUND</p>
+      <p class="eyebrow">COMMUNITY BETA14 · FIRST INVITED ROUND</p>
       <h1>Your first session.</h1>
       <p>
-        Install <strong>0.2.0-beta.13</strong>, complete the checks below and
-        try one feature available to you, or the feature in your invitation.
+        Install <strong>0.2.0-beta.14</strong>, complete the checks below and
+        try one routine available to you, or the feature in your invitation.
         Send every result, question or concern through the
         <a href="/feedback">feedback form</a>. Keep your tester reference for
         follow-ups.
@@ -62,7 +62,7 @@
       <h2 id="install">Install or update</h2>
       <p>
         Download the installer for your system and <code>SHA256SUMS</code> from
-        the <a href="/downloads">beta13 download folder</a>. Use files from that
+        the <a href="/downloads">beta14 download folder</a>. Use files from that
         one delivery.
       </p>
       <div class="table-scroll">
@@ -76,27 +76,25 @@
           <tbody>
             <tr>
               <td>Windows 11 x64</td>
-              <td><code>Mythical.Operator-0.2.0-beta.13-win-x64.exe</code></td>
+              <td><code>IFRIT-0.2.0-beta.14-win-x64.exe</code></td>
             </tr>
             <tr>
               <td>Ubuntu 24.04 x64</td>
               <td>
-                <code>Mythical.Operator-0.2.0-beta.13-linux-amd64.deb</code>
+                <code>IFRIT-0.2.0-beta.14-linux-amd64.deb</code>
               </td>
             </tr>
             <tr>
               <td>Linux Mint or another compatible x64 Linux</td>
               <td>
-                <code
-                  >Mythical.Operator-0.2.0-beta.13-linux-x86_64.AppImage</code
-                >
+                <code>IFRIT-0.2.0-beta.14-linux-x86_64.AppImage</code>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <p>On Windows, check the downloaded file in PowerShell:</p>
-      <pre><code class="language-powershell">Get-FileHash -Algorithm SHA256 '.\Mythical.Operator-0.2.0-beta.13-win-x64.exe'
+      <pre><code class="language-powershell">Get-FileHash -Algorithm SHA256 '.\IFRIT-0.2.0-beta.14-win-x64.exe'
 </code></pre>
       <p>
         Compare its hash with the matching entry in <code>SHA256SUMS</code>.
@@ -111,14 +109,14 @@
         The installer you will use must report <code>OK</code>. For Ubuntu,
         install the DEB:
       </p>
-      <pre><code class="language-sh">sudo apt install './Mythical.Operator-0.2.0-beta.13-linux-amd64.deb'
+      <pre><code class="language-sh">sudo apt install './IFRIT-0.2.0-beta.14-linux-amd64.deb'
 </code></pre>
       <p>
         For AppImage, grant execution permission and open it as your ordinary
         user:
       </p>
-      <pre><code class="language-sh">chmod +x './Mythical.Operator-0.2.0-beta.13-linux-x86_64.AppImage'
-'./Mythical.Operator-0.2.0-beta.13-linux-x86_64.AppImage'
+      <pre><code class="language-sh">chmod +x './IFRIT-0.2.0-beta.14-linux-x86_64.AppImage'
+'./IFRIT-0.2.0-beta.14-linux-x86_64.AppImage'
 </code></pre>
       <p>
         If FUSE is missing, try the AppImage with
@@ -130,51 +128,60 @@
         For an update, stop the active session, create and verify an encrypted
         backup, exit the app and install over the previous version. Keep the
         existing profile. Run one version at a time. A profile renewed with
-        beta12 localfix.3 or beta13 must not be downgraded to the original
-        beta12.
+        beta12 localfix.3, beta13 or beta14 must not be downgraded to the
+        original beta12. Do not downgrade a profile after a beta14 migration.
       </p>
       <h2 id="session">First session</h2>
       <ol>
         <li>
-          Choose your language, configure the vault and optional PIN, and add a
-          public account for observation. Enter wallet secrets only in the app's
-          local vault window. Use a dedicated test wallet for live operations.
+          Choose your language and open or create your profile. Keep wallet
+          secrets in the app’s local vault window. Use a dedicated test wallet
+          for any live test.
         </li>
         <li>
-          Check the account, network and inventory. Open a review for your
-          assigned feature, verify the assets, destination and fees, then
-          cancel. No operation should be submitted by that cancellation.
+          Open <strong>Routines</strong>. Check the compact app status, your
+          current routines and the templates you can create. Expand details for
+          limits or explanations. Opening a template must never submit an
+          operation.
         </li>
         <li>
-          If you choose a live test, review and confirm your limits and validity
-          in Settings. Activate the session explicitly. Review the operation
-          again and approve it only when its details are correct.
+          Create or edit one routine, review its purpose, assets and limits,
+          then cancel once to check the flow. No live operation is needed to
+          test the interface.
         </li>
         <li>
-          Follow Activity through the result. Compare the assets, fees and
-          remaining limits with what you approved. Submission alone is not a
-          completed result.
+          If you choose a live test, confirm the routine and the app’s
+          authorization, then enable automation explicitly. Follow
+          <strong>Activity</strong> through the result; submission alone does
+          not mean completion. Compare actual spending and fees with your
+          approved limits.
         </li>
         <li>
-          Exit normally and reopen once the submission state is known. Check
-          that history persists and the app requires unlocking and manual
-          session activation.
+          Pause the routine and check that its paused state persists. Exit and
+          reopen; verify your profile, history and limits before resuming.
+          Follow any explicit migration or renewal instructions after an update.
         </li>
       </ol>
       <p>
-        Changing limits or renewing an authorization requires manual session
-        activation. Closing the window to the tray can leave an authorized
-        session running; use <strong>Exit</strong> to stop the app. Pause stops
-        new work; it does not reverse work already submitted.
+        Locking the interface hides private details and is separate from pausing
+        work. Closing to the tray may leave automation running. Use
+        <strong>Pause automation</strong> to stop new work or
+        <strong>Exit</strong> to stop the app. A pause does not reverse a
+        submitted operation. Automatic resumption is available only when
+        explicitly authorized for that computer; check the status after
+        reopening.
       </p>
       <h2 id="result">Send the result</h2>
       <p>
-        Use the form even when everything worked. Record review and final
-        execution separately: <strong>Pass</strong>, <strong>Fail</strong>,
-        <strong>Pending</strong>, <strong>Blocked</strong> or
-        <strong>Not run</strong>. A missing ingredient, offer or service is a
-        reason to explain a blocked test. Bounty is observation-only. A delayed
-        game result stays pending until it arrives.
+        Use the form even when everything worked. Report
+        <strong>0.2.0-beta.14</strong>; if it is not listed, choose
+        <strong>A different version</strong> and include it in your report.
+        Record review and final execution separately: <strong>Pass</strong>,
+        <strong>Fail</strong>, <strong>Pending</strong>,
+        <strong>Blocked</strong> or <strong>Not run</strong>. A missing
+        ingredient, offer or service is a reason to explain a blocked test.
+        Bounty is observation-only. A delayed game result stays pending until it
+        arrives.
       </p>
       <p>
         For problems, describe your steps, what you expected and what happened.
@@ -198,12 +205,17 @@
         varies. Some translations and layouts are still being refined.
       </p>
       <p>
-        Craft and GIFTZ have completed-operation evidence. The reviewed
-        Incubation report included submission, retained-card and renewal
-        evidence; its final return was pending. Morph has earlier
-        completed-operation evidence. Market, Battlegrounds, Polygon/bridge,
-        potions and collection rewards need more complete testing. Bounty is
-        observation-only.
+        Beta14 focuses on routines and a compact overview. Historical
+        live-operation results from earlier betas do not validate every routine
+        in this version. A full 48-hour live continuity exercise and complete
+        Windows 11 manual acceptance are separate checks. Bounty remains
+        informational. Report a delayed game result as pending until it arrives.
+      </p>
+      <p>
+        This invited beta still has unresolved dependency security alerts,
+        including high-severity findings. The download includes
+        <code>VALIDATION.md</code> with the test results and outstanding checks.
+        It is not a security-cleared production release.
       </p>
       <h2 id="privacy">Feedback privacy</h2>
       <p>
@@ -226,8 +238,8 @@
       </p>
       <p>
         Reports and access requests are reviewed manually during the invited
-        round, 15–29 October 2026. This form is not monitored continuously and
-        no fixed response time is promised. Check
+        round. This form is not monitored continuously and no fixed response
+        time is promised. Check
         <a href="/#updates">round updates</a> before another test. This website
         uses no analytics scripts or tracking cookies.
       </p>
@@ -236,7 +248,7 @@
       <div class="footer-top">
         <a class="footer-brand" href="https://mythicalbeings.io/"
           ><img src="/mark.svg" width="39" height="39" alt="" /><span
-            >MYTHICAL BEINGS <b>/ OPERATOR</b></span
+            >MYTHICAL BEINGS <b>/ IFRIT</b></span
           ></a
         >
         <p>
